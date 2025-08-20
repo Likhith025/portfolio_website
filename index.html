@@ -19,10 +19,11 @@
       <a href="#contact">Contact</a>
     </div>
     <div class="right">
-      <a href="https://github.com/YourName" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/YourUsername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-      <a href="https://leetcode.com/YourUsername" target="_blank" class="social-icon"><i class="fas fa-code"></i></a>
-      <a href="./Likhith_Resume.pdf" download><button>Download CV</button></a>
+      <a href="javascript:void(0)" id="email-link" class="social-icon"><i class="fas fa-envelope"></i></a>
+      <a href="javascript:void(0)" id="github-link" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="javascript:void(0)" id="linkedin-link" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="javascript:void(0)" id="leetcode-link" class="social-icon" target="_blank"><i class="fas fa-code"></i></a>
+      <a href="javascript:void(0)" id="resume-link" download><button>Download CV</button></a>
     </div>
   </div>
 
@@ -30,8 +31,7 @@
     <section id="home" class="home-section snap-section">
       <div class="home-content">
         <h1>Hello, I'm <span>Alasyam Likhith</span></h1>
-        <p>A passionate <b>Web Developer</b> creating modern & responsive websites.</p>
-        <a href="#projects" class="cta-btn">Hire Me</a>
+        <p>A student and aspiring <b>Web Developer</b> passionate about creating modern & responsive websites.</p>
       </div>
       <a class="scroll-down"><i class="fas fa-chevron-down"></i></a>
     </section>
@@ -40,14 +40,22 @@
       <div class="about-content">
         <h2>About Me</h2>
         <p>
-          I’m a dedicated web developer who loves crafting clean and efficient code. 
-          I enjoy solving complex problems, building interactive user experiences, 
-          and continuously learning new technologies to stay ahead in the industry.
+          I’m a final-year Computer Science student and passionate web developer who loves 
+          crafting clean and efficient code. Over the course of my studies, I’ve built a 
+          strong foundation in programming, problem-solving, and software development, 
+          which I actively apply in my academic and personal projects.
         </p>
         <p>
-          My goal is to create websites and applications that are not only functional 
-          but also visually appealing and user-friendly. I thrive in collaborative 
-          environments and love turning ideas into real, working solutions.
+          I enjoy exploring new technologies, building interactive user experiences, and 
+          continuously learning to grow as a developer. My projects range from web 
+          applications to tools that solve real-world problems, reflecting both my academic 
+          learning and self-driven curiosity.
+        </p>
+        <p>
+          Looking ahead, my goal is to create impactful digital solutions that are not only 
+          functional but also visually appealing and user-friendly. I thrive in collaborative 
+          environments and am excited to contribute my skills to innovative projects in the 
+          tech industry.
         </p>
       </div>
     </section>
@@ -90,88 +98,103 @@
       </div>
     </section>
 
-<section id="projects" class="projects-section snap-section">
-  <h2>Projects</h2>
-  <div class="timeline">
-    
-    <!-- Most Recent Project -->
-    <div class="timeline-item left">
-      <div class="timeline-content">
-        <h3>Personal Finance Tracker</h3>
-        <span class="date">Aug 2025 – Present</span>
-        <p>Full-stack app to track income, expenses, and savings with analytics dashboards.</p>
-        <a href="./personalfinance.html" class="btn">View in Detail</a>
+    <section id="projects" class="projects-section snap-section">
+      <h2 class="section-title">Projects</h2>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>Personal Finance Tracker</h3>
+            <span class="date">Aug 2025 – Present</span>
+            <p>
+              Full-stack MERN app to track income, expenses, loans, and investments. Includes analytics dashboards,
+              interactive charts, and a backtesting engine for mutual funds. JWT authentication implemented.
+            </p>
+            <a href="./personalfinance.html" class="btn">View in Detail</a>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3>TTGen</h3>
+            <span class="date">Feb 2025 – Jun 2025</span>
+            <p>
+              Web-based timetable generator using a genetic algorithm to automatically schedule classes and optimize
+              resource allocation. React frontend, Node.js/Express backend, MongoDB storage, JWT auth & Google OAuth.
+            </p>
+            <a href="./TTGen.html" class="btn">View in Detail</a>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>Defect Product Detection</h3>
+            <span class="date">Oct 2024 – Nov 2024</span>
+            <p>
+              ML-based system to detect defective jar lids using YOLOv5 & OpenCV for preprocessing.
+              Trained on annotated datasets in Google Colab to improve manufacturing quality control.
+            </p>
+            <a href="./project1.html" class="btn">View in Detail</a>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <h3>Text-to-Speech Application</h3>
+            <span class="date">Apr 2024</span>
+            <p>
+              Browser-based text-to-speech tool using HTML, CSS, and JS. Converts written content into natural audio
+              output using built-in browser voices.
+            </p>
+            <a href="./texttospeech.html" class="btn">View in Detail</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- TTGen -->
-    <div class="timeline-item right">
-      <div class="timeline-content">
-        <h3>TTGen</h3>
-        <span class="date">Feb 2025 – Jun 2025</span>
-        <p>Timetable generator to automate scheduling and optimize resource allocation.</p>
-        <a href="./TTGen.html" class="btn">View in Detail</a>
-      </div>
-    </div>
-
-    <!-- Defect Project Detection -->
-    <div class="timeline-item left">
-      <div class="timeline-content">
-        <h3>Defect Project Detection</h3>
-        <span class="date">Oct 2024 – Nov 2024</span>
-        <p>Machine Learning–based system to predict and detect project defects early.</p>
-        <a href="./project1.html" class="btn">View in Detail</a>
-      </div>
-    </div>
-
-    <!-- Text-to-Speech -->
-    <div class="timeline-item right">
-      <div class="timeline-content">
-        <h3>Text-to-Speech Application</h3>
-        <span class="date">Apr 2024</span>
-        <p>Developed a text-to-speech tool converting written content into natural audio output.</p>
-        <a href="./texttospeech.html" class="btn">View in Detail</a>
-      </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
     <section id="freelance" class="freelance-section snap-section">
-      <h2>Freelance Projects</h2>
-      <div class="freelance-card">
-        <h3>ERP Website for Tirumala Constructions</h3>
-        <p>
-          Designed and developed a full-scale ERP website for <b>Tirumala Constructions</b>, 
-          streamlining project management, employee tracking, and financial workflows.
-        </p>
-        <a href="./tirumala.html" class="btn">View Details</a>
+      <h2 class="section-title">Freelance Projects</h2>
+      <div class="timeline freelance-timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <h3>ERP Website for Tirumala Constructions</h3>
+            <span class="date">Nov 2024 – Jun 2025</span>
+            <p>Developed a full-scale ERP system for Tirumala Constructions...</p>
+            <a href="./tirumala.html" class="btn">View Details</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="contact-section snap-section">
-      <h2>Contact Me</h2>
+      <h2 class="section-title">Contact Me</h2>
       <div class="contact-container">
-        <div class="contact-box">
+        <a href="javascript:void(0)" id="email-contact-link" class="contact-box" target="_blank">
           <i class="fas fa-envelope"></i>
           <h3>Email</h3>
-          <p>yourname@example.com</p>
-        </div>
-        <div class="contact-box">
-          <i class="fas fa-phone"></i>
-          <h3>Phone</h3>
-          <p>+91 98765 43210</p>
-        </div>
-        <div class="contact-box">
+<p id="email-contact-text">{links.email}</p>
+        </a>
+<a href="javascript:void(0)" id="phone-contact-link" class="contact-box" target="_blank">
+  <i class="fas fa-phone"></i>
+  <h3>Phone</h3>
+  <p id="phone-contact-text"></p>
+</a>
+<a href="https://www.google.com/maps?q=Hyderabad,India" class="contact-box" target="_blank">
           <i class="fas fa-map-marker-alt"></i>
           <h3>Location</h3>
           <p>Hyderabad, India</p>
-        </div>
-        <div class="contact-box">
+        </a>
+        <a href="javascript:void(0)" id="linkedin-contact-link" class="contact-box" target="_blank">
           <i class="fab fa-linkedin"></i>
           <h3>LinkedIn</h3>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank">View Profile</a>
-        </div>
+          <p>View Profile</p>
+        </a>
+        <a href="javascript:void(0)" id="github-contact-link" class="contact-box" target="_blank">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <p>Visit GitHub</p>
+        </a>
+        <a href="javascript:void(0)" id="leetcode-contact-link" class="contact-box" target="_blank">
+          <i class="fas fa-code"></i>
+          <h3>LeetCode</h3>
+          <p>View Profile</p>
+        </a>
       </div>
     </section>
 
@@ -187,15 +210,42 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="footer-socials">
-          <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="javascript:void(0)" id="email-footer-link" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a href="javascript:void(0)" id="github-footer-link" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="javascript:void(0)" id="linkedin-footer-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="javascript:void(0)" id="leetcode-footer-link" target="_blank"><i class="fas fa-code"></i></a>
         </div>
         <p class="footer-copy">© 2025 Alasyam Likhith. All Rights Reserved.</p>
       </div>
     </footer>
   </div>
 
+  <script src="./links.js"></script>
   <script src="./script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Update top bar social links
+      document.getElementById('email-link').href = 'mailto:' + links.email;
+      document.getElementById('github-link').href = links.github;
+      document.getElementById('linkedin-link').href = links.linkedin;
+      document.getElementById('leetcode-link').href = links.leetcode;
+      document.getElementById('resume-link').href = links.resume;
+      document.getElementById('phone-contact-link').href = 'tel:' + links.phone;
+      document.getElementById('phone-contact-text').textContent = links.phone;
+
+      // Update contact section links
+      document.getElementById('email-contact-link').href = 'mailto:' + links.email;
+      document.getElementById('email-contact-text').textContent = links.email;
+      document.getElementById('github-contact-link').href = links.github;
+      document.getElementById('linkedin-contact-link').href = links.linkedin;
+      document.getElementById('leetcode-contact-link').href = links.leetcode;
+
+      // Update footer social links
+      document.getElementById('email-footer-link').href = 'mailto:' + links.email;
+      document.getElementById('github-footer-link').href = links.github;
+      document.getElementById('linkedin-footer-link').href = links.linkedin;
+      document.getElementById('leetcode-footer-link').href = links.leetcode;
+    });
+  </script>
 </body>
 </html>

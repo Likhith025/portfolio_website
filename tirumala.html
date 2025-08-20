@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Defect Project Detection | Portfolio</title>
+  <title>Tirumala Construction ERP | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./project.css">
 </head>
 <body>
-  <!-- Same Top Bar -->
+  <!-- Top Bar -->
   <div class="top-bar">
     <div class="left">My Portfolio</div>
     <div class="middle">
@@ -21,68 +21,98 @@
       <a href="index.html#contact">Contact</a>
     </div>
     <div class="right">
-      <a href="https://github.com/YourName" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/YourUsername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-      <a href="https://leetcode.com/YourUsername" target="_blank" class="social-icon"><i class="fas fa-code"></i></a>
-      <a href="./Likhith_Resume.pdf" download><button>Download CV</button></a>
+      <a href="javascript:void(0)" id="email-link" class="social-icon"><i class="fas fa-envelope"></i></a>
+      <a href="javascript:void(0)" id="github-link" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="javascript:void(0)" id="linkedin-link" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="javascript:void(0)" id="leetcode-link" class="social-icon" target="_blank"><i class="fas fa-code"></i></a>
+      <a href="javascript:void(0)" id="resume-link" download><button>Download CV</button></a>
     </div>
   </div>
 
   <!-- Back Button -->
   <div class="back-btn">
-    <a href="index.html#freelance"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+    <a href="index.html#projects"><i class="fas fa-arrow-left"></i> Back to Projects</a>
   </div>
 
   <!-- Project Detail Section -->
   <section class="project-view">
     <div class="project-container">
-      <h1 class="project-title">Defect Project Detection</h1>
+      <h1 class="project-title">Tirumala Construction ERP (Freelance)</h1>
+      <span class="date">Nov 2024 – June 2025</span>
+
       <p class="project-desc">
-        A Machine Learning based project that analyzes datasets to detect potential 
-        software project defects early in the development cycle. The goal is to 
-        enhance software quality and reduce production-level issues.
+        Developed a <b>custom ERP system</b> for <b>Tirumala Constructions</b> as a freelance full-stack developer, 
+        to streamline operations including <b>inventory management</b>, <b>vendor orders</b>, <b>expenses and income tracking</b>, 
+        and <b>automated financial reports</b> like P&L and balance sheets. The system allows the client to monitor 
+        business operations in real-time, reduce manual errors, and enhance decision-making efficiency.
       </p>
+
+      <ul class="project-points">
+        <li>Designed backend services using <b>Express.js</b> and <b>Mongoose</b> for efficient CRUD operations on projects, inventory, and transactions.</li>
+        <li>Implemented <b>JWT-based role access control</b> with middleware for Admin, Manager, and Staff users.</li>
+        <li>Built a responsive <b>React.js frontend</b> for visualizing data, generating reports, and performing daily operations.</li>
+        <li>Automated <b>P&L and balance sheet calculations</b> based on live financial data, improving accuracy and decision-making.</li>
+        <li>Integrated <b>GitHub CI/CD pipelines</b> for automated deployment of frontend (Vercel) and backend (Render) with environment-specific configs.</li>
+        <li>Optimized database schema and queries to support multi-user concurrent operations seamlessly.</li>
+      </ul>
 
       <div class="project-tech">
         <h3>Tech Stack Used:</h3>
         <div class="skills-items">
-          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><span>Python</span></div>
-          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"><span>Pandas</span></div>
-          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikit-learn/scikit-learn-original.svg"><span>Scikit-Learn</span></div>
-          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg"><span>Matplotlib</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React.js</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"><span>Express.js</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+          <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel"><span>Vercel</span></div>
         </div>
       </div>
 
       <div class="project-links">
-        <a href="https://github.com/yourusername/defect-detection" target="_blank" class="btn">
-          <i class="fab fa-github"></i> View Code
-        </a>
-        <a href="https://defect-detection-demo.com" target="_blank" class="btn btn-alt">
+        <a href="javascript:void(0)" id="tirumala-website" class="btn btn-alt" target="_blank">
           <i class="fas fa-external-link-alt"></i> Live Demo
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Footer (same as index) -->
-  <footer id="footer" class="footer snap-section">
-    <div class="footer-container">
-      <h2 class="footer-logo">Alasyam Likhith</h2>
-      <ul class="footer-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#skills">Skills</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="index.html#freelance">Freelance</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
-      <div class="footer-socials">
-        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+  <!-- Footer -->
+    <footer id="footer" class="footer snap-section">
+      <div class="footer-container">
+        <h2 class="footer-logo">Alasyam Likhith</h2>
+        <ul class="footer-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#freelance">Freelance</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <p class="footer-copy">© 2025 Alasyam Likhith. All Rights Reserved.</p>
       </div>
-      <p class="footer-copy">© 2025 Alasyam Likhith. All Rights Reserved.</p>
-    </div>
-  </footer>
+    </footer>
+  <script src="./links.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Update top bar social links
+      document.getElementById('github-link').href = links.github;
+      document.getElementById('linkedin-link').href = links.linkedin;
+      document.getElementById('leetcode-link').href = links.leetcode;
+      document.getElementById('resume-link').href = links.resume;
+          document.getElementById('email-link').href = 'mailto:' + links.email;
+
+
+      // Update project link
+      document.getElementById('project-github-link').href = links.github + '/construction-erp';
+      document.getElementById('tirumala-website').href = links.tirumala_website
+
+      // Update footer social links
+      document.getElementById('email-footer-link').href = 'mailto:' + links.email;
+      document.getElementById('github-footer-link').href = links.github;
+      document.getElementById('linkedin-footer-link').href = links.linkedin;
+      document.getElementById('leetcode-footer-link').href = links.leetcode;
+    });
+  </script>
 </body>
 </html>

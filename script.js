@@ -7,17 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5 // Trigger when 50% of the section is visible
+    threshold: 0.4 // Trigger when 50% of the section is visible
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const sectionId = entry.target.getAttribute('id');
+
         navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${sectionId}`) {
+          const navTarget = link.getAttribute('href').substring(1); // remove #
+          
+          // Highlight link if section ID contains navTarget (handles duplicates)
+          if (sectionId.includes(navTarget)) {
             link.classList.add('active');
+          } else {
+            link.classList.remove('active');
           }
         });
       }
