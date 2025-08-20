@@ -1,0 +1,84 @@
+.back-btn {
+  margin: 20px 10%;
+}
+.back-btn a {
+  font-size: 1rem;
+  color: #1e3c72;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+.back-btn a:hover {
+  color: #2a5298;
+}
+
+.project-view {
+  background: #fff;
+  padding: 80px 15%;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+.project-desc {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.project-tech h3 {
+  font-size: 1.5rem;
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.skill-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  margin-top: 40px;
+}
+
+.project-links .btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #1e3c72;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.project-links .btn-alt {
+  background: #2a5298;
+}
+
+.project-links .btn:hover {
+  opacity: 0.9;
+}
